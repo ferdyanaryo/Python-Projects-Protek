@@ -2,6 +2,7 @@
 import time
 import datetime
 
+
 # input nama user
 nama = input("Hallo... nama saya Mr. Kompie, nama Anda siapa? ")
 
