@@ -29,11 +29,9 @@ if (ngol == "D"):
     ngaji = 5500000
     npers = 0.01
     npoto = ngaji * npers
-    nbers = ngaji - npoto
-
-        
+    nbers = ngaji - npoto        
 print("Gaji Pokok               : Rp",ngaji)
 print("Potongan (",npers*100,"% )       : Rp",npoto)
-print("--------------------------------")
+print("________________________________ -")
 print("Gaji Bersih              : Rp",nbers)
 
