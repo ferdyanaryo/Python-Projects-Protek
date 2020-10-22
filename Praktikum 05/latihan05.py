@@ -8,6 +8,7 @@ if (nmen == "1"):
     nme2 = "Menikah"
     tmen    = 0.1
     tank    = nank * 0.05
+    
 if (nmen == "2"):
     nme2 = "Belum Menikah"
     nank = 0
