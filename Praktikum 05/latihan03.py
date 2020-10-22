@@ -12,7 +12,7 @@ if (0 <= nmtk <= 100) and (0 <= nindo <= 100) and (0 <= nipa <= 100):
         status = "TIDAK LULUS"
     
     print("Status Kelulusan               :",status)
-    if (nindo < 60) or (nipa < 60) or (nmtk <= 70):
+    if (status == 'TIDAK LULUS'):
         print("Sebab                          :")
         if (nindo < 60):
             print("- Nilai bahasa Indonesia kurang dari 60")
