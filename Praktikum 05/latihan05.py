@@ -6,8 +6,8 @@ nmen = input("Masukkan status (1:menikah,2:belum): ")
 if (nmen == "1"):
     nank = int(input("Masukkan jumlah anak               : "))
     nme2 = "Menikah"
-    tmen    = 0.1
-    tank    = nank * 0.05
+    tmen = 0.1
+    tank = nank * 0.05
     
 if (nmen == "2"):
     nme2 = "Belum Menikah"
