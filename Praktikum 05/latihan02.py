@@ -14,6 +14,5 @@ if (0 <= nmtk <= 100) and (0 <= nindo <= 100) and (0 <= nipa <= 100):
     print("Status Kelulusan               :",status)
 
 else:
-    print("")
     print("Maaf input ada yang tidak valid")
-    print("")
+    
