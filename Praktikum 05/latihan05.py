@@ -25,34 +25,37 @@ print("Status Menikah           :",nme2)
 print("Jumlah Anak              :",nank)
 print("--------------------------------")
 
-if (ngol == "A"):
-    ngaji = 10000000
-    npers = 0.025
+if (ngol == "A") or (ngol == "B") or (ngol == "C") or (ngol == "D"):
+    if (ngol == "A"):
+        ngaji = 10000000
+        npers = 0.025
 
-if (ngol == "B"):
-    ngaji = 8500000
-    npers = 0.02
+    if (ngol == "B"):
+        ngaji = 8500000
+        npers = 0.02
+        
+    if (ngol == "C"):
+        ngaji = 7000000
+        npers = 0.015
+        
+    if (ngol == "D"):
+        ngaji = 5500000
+        npers = 0.01
     
-if (ngol == "C"):
-    ngaji = 7000000
-    npers = 0.015
-    
-if (ngol == "D"):
-    ngaji = 5500000
-    npers = 0.01
-   
-ntmen   = ngaji * tmen
-ntank   = ngaji * tank
-nkot    = ngaji + ntmen + ntank
-npoto   = nkot * npers
-nbers   = nkot - npoto
+    ntmen   = ngaji * tmen
+    ntank   = ngaji * tank
+    nkot    = ngaji + ntmen + ntank
+    npoto   = nkot * npers
+    nbers   = nkot - npoto
+      
+    print("Gaji Pokok               : Rp",ngaji)
+    print("Tunjangan Istri/Suami    : Rp",ntmen)
+    print("Tunjangan Anak           : Rp",ntank)
+    print("________________________________ +")
+    print("Gaji Kotor               : Rp",nkot)
+    print("Potongan (",npers*100,"% )       : Rp",npoto)
+    print("________________________________ -")
+    print("Gaji Bersih              : Rp",nbers)
 
-     
-print("Gaji Pokok               : Rp",ngaji)
-print("Tunjangan Istri/Suami    : Rp",ntmen)
-print("Tunjangan Anak           : Rp",ntank)
-print("________________________________ +")
-print("Gaji Kotor               : Rp",nkot)
-print("Potongan (",npers*100,"% )       : Rp",npoto)
-print("________________________________ -")
-print("Gaji Bersih              : Rp",nbers)
+else:
+    print("Golongan tidak valid")
