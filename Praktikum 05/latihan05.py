@@ -6,9 +6,13 @@ nmen = input("Masukkan status (1:menikah,2:belum): ")
 if (nmen == "1"):
     nank = int(input("Masukkan jumlah anak               : "))
     nme2 = "Menikah"
+    tmen    = 0.1
+    tank    = nank * 0.05
 if (nmen == "2"):
     nme2 = "Belum Menikah"
     nank = 0
+    tmen = 0
+    tank = 0
 
 print()
 print("================================")
@@ -36,23 +40,12 @@ if (ngol == "D"):
     ngaji = 5500000
     npers = 0.01
    
-if (nmen == "2"):
-        tmen    = 0
-        ntmen   = ngaji * tmen
-        tank    = 0
-        ntank   = ngaji * tank
-        nkot    = ngaji + ntmen + ntank
-        npoto   = nkot * npers
-        nbers   = nkot - npoto
+ntmen   = ngaji * tmen
+ntank   = ngaji * tank
+nkot    = ngaji + ntmen + ntank
+npoto   = nkot * npers
+nbers   = nkot - npoto
 
-if (nmen == "1"):
-        tmen    = 0.1
-        ntmen   = ngaji * tmen
-        tank    = nank * 0.05
-        ntank   = ngaji * tank
-        nkot    = ngaji + ntmen + ntank
-        npoto   = nkot * npers
-        nbers   = nkot - npoto
      
 print("Gaji Pokok               : Rp",ngaji)
 print("Tunjangan Istri/Suami    : Rp",ntmen)
