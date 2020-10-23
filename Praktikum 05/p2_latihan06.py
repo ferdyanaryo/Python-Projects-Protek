@@ -5,7 +5,7 @@ print('"Hai.. Nama saya Mr.Lepi, saya telah memiliki sebuah bilangan bulat acak 
 print('')
 
 bil = randint(0, 100)
-nil = 1
+nil = 100
 
 while True:
     #print(bil,nil)
