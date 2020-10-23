@@ -1,0 +1,9 @@
+i = 0
+
+while (i <= 100):
+    g = i % 2
+    if (g == 1):
+        print(i)
+        i += 1
+    else:
+        i += 1
