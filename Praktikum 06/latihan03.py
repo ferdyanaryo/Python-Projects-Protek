@@ -15,4 +15,4 @@ print("a. C (",a,",",b,") =",C)
 x = 10
 y = 7
 P = faktorial(x) / faktorial(x-y)
-print("b. P (",x,",",x,") =",P)
+print("b. P (",x,",",y,") =",P)

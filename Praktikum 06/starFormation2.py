@@ -1,5 +1,5 @@
 
-def starFormation(n):
+def starFormation2(n):
     i = 0
     while (i < n):
         j = i
@@ -9,4 +9,4 @@ def starFormation(n):
         print()
         i += 1
 
-starFormation(5)
+#starFormation2(5)
