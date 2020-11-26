@@ -1,0 +1,1 @@
+asddssad 123321& C:/Users/aDMIN/AppData/Local/Programs/Python/Python38/python.exe "d:/UNS/Github/Python Projects/Praktikum 07/latihan/latihan02.py"

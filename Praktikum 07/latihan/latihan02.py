@@ -1,19 +1,32 @@
 try:
     x = str(input("Masukkan nama file : "))
 
+    file   = open(x,"r")
+    #print(file.read())
     
-    nlgi = 'y'
-    if (nlgi == 'y'):
+    nlgi = True
+
+    while (nlgi == True):
+        file   = open(x,"a")
         ninput = str(input("Data yang mau ditambahkan : "))
-        file   = open(x,"r")
         file.write(ninput)
-        nlgi = str(input("Mau lagi (y/n) : "))
-    else:
-        print('')
-        print(file.read())
-        print('')
 
+        ninp = str(input("Mau lagi (y/n) : "))
+        if ninp == "y":
+            nlgi = True
 
+        elif ninp == "n":
+            nlgi = False
+
+        else:
+            print("input tidak valid")
+            nlgi = False
+
+        file.close()
+        
+            
 except FileNotFoundError:
     print("File yang anda cari tidak ditemukan, coba file lain")
-    print('')
+
+except OSError:
+    print("File yang anda cari tidak ditemukan, coba file lain")
