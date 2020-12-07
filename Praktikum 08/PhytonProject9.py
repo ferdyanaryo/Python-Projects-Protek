@@ -11,7 +11,7 @@ for x,y in buah.items():
 while True:
     #try:
     pilih = str(input("Nama buah yang dibeli = "))
-    if pilih == 'apel' or pilih == 'jeruk' or pilih == 'mangga' or pilih == 'duku':
+    if pilih in buah.keys():
         while True:
             try:
                 jumlh = int(input("Berapa                = "))

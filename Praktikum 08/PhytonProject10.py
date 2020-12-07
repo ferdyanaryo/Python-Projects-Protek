@@ -14,7 +14,7 @@ while True:
     #try:
     print('')
     pilih = str(input("Nama buah yang dibeli = "))
-    if pilih == 'apel' or pilih == 'jeruk' or pilih == 'mangga' or pilih == 'duku':
+    if pilih in buah.keys():
         
         try:
             jumlh = int(input("Berapa  Kg            = "))
