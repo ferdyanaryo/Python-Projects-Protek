@@ -1,27 +1,25 @@
-import math
-#Judul program
-print("Menghitung Tabel Sinus Metode Loop")
-print("==========================================")
+import tkinter as tk
 
-# tabel_sudut()
-sdt_awal = int(input("Masukkan data sudut awal ="))
-sdt_akhir = int(input("Masukkan data sudut akhir ="))
-interval_sdt = int(input("Masukkan data interval sudut ="))
-jml_looping = int((sdt_akhir - sdt_awal)/interval_sdt)+1
+root = tk.Tk()
 
-print("==========================================")
-print("| Nomor | sdt | sinus | cosinus | tangen |")
-print("==========================================")
+margin = 0.23
+projectedSales = tk.IntVar()
+profit = tk.IntVar()
 
-#proses
-for i in range(1,jml_looping):
-    sdt = sdt_awal + (interval_sdt*i)
-    s=float(math.sin(math.radians(sdt)))
-    c=float(math.cos(math.radians(sdt)))
-    t=float(math.tan(math.radians(sdt)))
-    if sdt == 90:
-        t = float('inf')
+entry = tk.Entry(root, textvariable=projectedSales)
 
-    print("| %5d | %3d | %5.2f | %7.2f | %6.2f |" %(i,sdt,s,c,t))
+entry.pack()
 
-print("==========================================")
+def profit_calculator():
+    profit.set(margin * projectedSales.get())
+
+labelProSales = tk.Label(root, textvariable=projectedSales)
+labelProSales.pack()
+
+labelProfit = tk.Label(root, textvariable=profit)
+labelProfit.pack()
+
+button_calc = tk.Button(root, text="Calculate", command=profit_calculator)
+button_calc.pack()
+
+root.mainloop()
