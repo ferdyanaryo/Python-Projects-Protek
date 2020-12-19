@@ -15,4 +15,4 @@ def bintang(n):
         print('n bukan ganjil')
             
 
-bintang(9)
+bintang(7)
